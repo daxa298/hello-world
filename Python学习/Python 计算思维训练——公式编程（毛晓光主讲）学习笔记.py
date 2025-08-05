@@ -1,3 +1,5 @@
+# 1.基本的数学运算
+# 在Python中，我们可以使用基本的数学运算符来进行简单的数学计算
 def calculate_free_fall_height():
     # This code calculates the height of an object in free fall after a certain time.
     v = 25 # Initial velocity in m/s
@@ -12,6 +14,10 @@ def calculate_free_fall_height():
 
 calculate_free_fall_height()
 
+# 2.利用%.2f格式化输出
+# 在Python中，我们可以使用格式化输出的方式来控制输出的精度和格式。
+# 以摄氏度和华氏度的转换为例，我们可以使用格式化输出的方式来控制输出的精度。
+# 摄氏度转换为华氏度的公式是：F = C * 9 / 5 + 32
 
 F = 117.8 # 华氏度
 C = (F - 32) * 5 / 9 # 摄氏度转换为华氏度的公式
@@ -29,7 +35,7 @@ print ("华氏%.2f对应的摄氏度为%.2f" % (F, C))
 # 那么我们就可以看到，%.2f表示保留两位小数，这样就让结果看起来更美观了。
 
 # 接下来我们来看看math模块如何使用
-
+# 3.math模块
 from math import *
 
 # math模块提供了许多数学函数和常量，我们可以使用它来进行更复杂的数学计算。
@@ -51,3 +57,24 @@ x = m/u * log(cosh(sqrt(u*g/m)*t))
 
 # 计算小球的位移
 print("小球在%.2f秒后的位移为%.2f米" % (t, x))
+
+# 4.综合训练
+# 在这个部分，我们将综合运用之前学到的知识来解决一个实际问题。
+# 假设我们要计算一个物体在抛射运动中的高度，已知：v0=25km/h，g=9.8m/s^2，y0=1，x=0.5，θ=60，θ（theta）的单位为角度（右侧代码中已初始化），v0的单位为千米每小时。
+# ********** Begin *********
+# 导入math库以及所需函数
+from math import *
+# 为各参数赋值
+v0 = 25
+g = 9.8
+y0 = 1
+x = 0.5
+theta = 60
+# 单位转换
+v0 = v0/3.6
+theta = theta/180*pi
+# 求出y值
+y = x*tan(theta)-1/(2*v0**2)*g*x**2/(cos(theta)**2)+y0
+print("y值计算结果为：%.5f米" %(y))
+# ********** End *********
+# 预期输出：y 值计算结果为：1.76442米
