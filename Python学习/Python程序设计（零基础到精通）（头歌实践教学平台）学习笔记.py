@@ -1,4 +1,6 @@
 # Python基础训练.py
+from math import *
+"注意：本文已加入数学模组，请在后续的代码中排除掉from math import！！！"
 # 1.字符串格式化输出
 # 在Python中，我们可以使用字符串格式化输出的方式来控制输出的精度和格式。
 #首先，我们来看一个简单的Python程序，它会输出一段话。
@@ -197,3 +199,129 @@ print("删除元素后的列表为：{}".format(fruits))
 # 运行结果：
 # 删除的元素为：banana
 # 删除元素后的列表为：['apple', 'cherry']
+
+# 7.列表元素的排序
+ #Python还可以对列表中的元素进行排序
+"""
+例如，我们想将参加会议的专家名单guests列表中的五个名字元素['zhang san','li si','wang wu','sun qi','qian ba']，分别按照首字母从小到大的顺序和从大到小的顺序分别排序。排序后的输出分别为：
+
+['li si','qian ba','sun qi','wang wu','zhang san']
+['zhang san','wang wu','sun qi','qian ba','li si']
+
+"""
+#那么我们该怎么实现呢？
+"使用sort()函数来实现排序"
+#Python 针对列表数据结构内置提供了sort()方法，实现对列表元素的排序功能。其基本语法如下：
+# source_list.sort(reverse=True)
+"""
+其中：
+source_list：待排序的列表；
+sort：列表排序函数的语法关键词；
+reverse：sort函数的可选参数。如果设置其值为True，则进行反向从大到小排序，如果设置为False或者不填写该参数，则默认进行正向从小到大排序。
+"""
+
+# 8.数值列表的简单统计运算
+# 在本知识点中，我们将会从range()、list()、sum()等函数来入手
+
+# 8.1 range()函数
+
+#Python 提供了range()函数，能够用来生成一系列连续增加的数字。其基本使用语法有如下三种：
+# (1)使用range函数来进行数字的生成
+#range(lower_limit,upper_limit,step)
+"""
+其中：
+
+lower_limit: 生成系列整数的下限整数，不填该参数则默认为从0开始，生成的整数从此数开始，包括该数；
+
+upper_limit：生成系列整数的上限整数，必填参数，生成的整数要小于该上限；
+
+step：在下限和上限之间生成系列整数之间的间隔步长，不填该参数则默认步长为1。
+
+注意：range()函数的三个参数都只能为整数。如果range()函数中仅一个参数，则该参数表示upper_limit，如果仅两个参数，则分别表示lower_limit和upper_limit。
+"""
+
+# 下面是一个示例：
+for i in range(1, 10, 2):
+    print(i)
+    print("当前数字是：{}".format(i))
+# 以上代码将会输出：
+# 1
+# 当前数字是：1
+# 3
+# 当前数字是：3
+# 5
+# 当前数字是：5
+# 7
+# 当前数字是：7
+# 9
+# 当前数字是：9
+
+# (2) 基于range()函数创建数字列表
+#我们可以通过range()函数，利用 Python 列表提供的append()插入功能创建一个列表
+
+#例如，我们要创建一个包含10个0~9整数的平方的列表：
+squares = []
+for i in range(10):
+    squares.append(i ** 2)
+print("0~9整数的平方列表为：{}".format(squares))
+
+# 运行结果：
+# 0~9整数的平方列表为：[0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# 9.列表切片
+#我们在前三个知识点 中学习了如何处理单个列表元素和所有列表元素，在这一知识点中我们还将学习如何处理部分列表元素（Python 中称为切片）。
+#Python 切片是对一个列表取其部分元素获得一个子序列的常见操作，切片操作的返回结果类型与被切片的对象一致。要创建一个已有列表的切片，通过指定切片的第一个列表元素和最后一个列表元素的索引号即可。其基本语法如下：
+#list_slice = source_list[start:end:step]
+"""
+其中：
+
+source_list：被切片的源列表；
+
+list_slice：切片后生成的子序列列表；
+
+start：切片起始索引位置，省略则从头开始；
+
+end：切片结束索引位置，省略则切至列表末尾；
+
+step：切片步长，可选参数，表示每N个元素取一个，默认为1。
+
+注意：切片和range()函数一样，Python 会自动到达所指定切片结束索引位置的前面一个元素停止。
+"""
+#例如，下面是我已经点好的菜名列表，现在朋友点的菜单中包含我的前三个菜名，输出朋友的菜单：
+my_menu = ['fish','pork','pizza','carrot']
+print(my_menu[1:4:2])
+print(my_menu[:3])
+print(my_menu[2:])
+"""
+输出结果：
+
+['pork','carrot']
+['fish','pork','pizza']
+['pizza','carrot']
+"""
+#负数索引返回的是离列表末尾相应间隔的元素，列表末尾元素的索引是从-1开始的。例如，朋友的菜单是包含我的菜单最后3个菜名：
+
+my_menu=['fish','pork','pizza','carrot']
+print(my_menu[-3:])
+
+#输出结果
+['pork','pizza','carrot']
+
+#Tip：当列表中的元素个数未知时，可以使用以下个例：
+# coding=utf-8
+
+# 创建并初始化my_menu列表
+my_menu = []
+while True:
+	try:
+		food = input()
+		my_menu.append(food)
+	except:
+		break
+
+# 请在此添加代码，对my_menu列表进行切片操作
+########## Begin ##########
+print(my_menu[::3])
+print(my_menu[-3:])
+
+########## End ##########
