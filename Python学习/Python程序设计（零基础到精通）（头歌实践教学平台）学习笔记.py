@@ -121,3 +121,79 @@ print("分割后的字符串列表为：{}".format(fruit_list))
 new_source_string = "-".join(fruit_list)
 print("连接后的字符串为：{}".format(new_source_string))
 # 在这个示例中，我们使用了split()方法将源字符串按照逗号分割成一个字符串列表，并使用join()方法将字符串列表连接成一个新的字符串。
+
+# 6.列表元素增删改
+
+# 在Python中，列表是一种非常常用的数据结构，可以存储多个元素。我们可以对列表进行增、删、改等操作。
+
+# 我们在使用这类功能时，往往会用到这么几个函数，它们分别是append()、insert()、remove()和pop()等。
+
+# 6.1 列表元素添加
+ # 6.1.1 使用append()方法添加元素
+# append()方法用于在列表的末尾添加一个元素。其语法如下：
+# list.append(element)
+# 其中，list是要添加元素的列表，element是要添加的元素。
+
+ # 下面是一个示例：
+fruits = ["apple", "banana", "cherry"]
+fruits.append("orange")
+print("添加元素后的列表为：{}".format(fruits))
+
+# 运行结果：
+# 添加元素后的列表为：['apple', 'banana', 'cherry', 'orange']
+
+ # 6.1.2 使用insert()方法添加元素
+# insert()方法用于在列表的指定位置插入一个元素。其语法如下:
+# list.insert(index, element)
+# 其中，list是要添加元素的列表，index是要插入元素的位置，element是要插入的元素。
+# 下面是一个示例：
+fruits = ["apple", "banana", "cherry"]
+fruits.insert(1, "orange")
+print("添加元素后的列表为：{}".format(fruits))
+# 运行结果：
+# 添加元素后的列表为：['apple', 'orange', 'banana', 'cherry']
+
+# 6.2 修改列表元素
+# 修改列表中的元素可以通过索引直接访问并赋值。其语法如下：
+# list[index] = new_value
+# 其中，list是要修改元素的列表，index是要修改元素的位置，new_value是新的值。
+# 下面是一个示例：
+fruits = ["apple", "banana", "cherry"]
+fruits[1] = "orange"
+print("修改元素后的列表为：{}".format(fruits))
+# 运行结果：
+# 修改元素后的列表为：['apple', 'orange', 'cherry']
+
+# 6.3 删除列表元素
+ #6.3.1 使用del函数删除元素 
+#在 Python 中，调用del函数能够删除指定索引位置的元素，其基本语法如下：
+# del list[index]
+# 其中，list是要删除元素的列表，index是要删除元素的位置。
+# 下面是一个示例：
+fruits = ["apple", "banana", "cherry"]
+del fruits[1]
+print("删除元素后的列表为：{}".format(fruits))
+# 运行结果：
+# 删除元素后的列表为：['apple', 'cherry']
+# 6.3.2 使用remove()方法删除元素
+# remove()方法用于删除列表中第一个匹配的元素。其语法如下:
+# list.remove(element)
+# 其中，list是要删除元素的列表，element是要删除的元素。
+# 下面是一个示例：
+fruits = ["apple", "banana", "cherry"]
+fruits.remove("banana")
+print("删除元素后的列表为：{}".format(fruits))
+# 运行结果：
+# 删除元素后的列表为：['apple', 'cherry']
+# 6.3.3 使用pop()方法删除元素
+# pop()方法用于删除列表中指定位置的元素，并返回该元素。其语法如下:
+# list.pop(index)
+# 其中，list是要删除元素的列表，index是要删除元素的位置。
+# 下面是一个示例：
+fruits = ["apple", "banana", "cherry"]
+removed_fruit = fruits.pop(1)
+print("删除的元素为：{}".format(removed_fruit))
+print("删除元素后的列表为：{}".format(fruits))
+# 运行结果：
+# 删除的元素为：banana
+# 删除元素后的列表为：['apple', 'cherry']
