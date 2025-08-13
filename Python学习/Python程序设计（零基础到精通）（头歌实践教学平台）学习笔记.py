@@ -384,20 +384,14 @@ tuple(seq)：将列表转换为元组。
 # coding=utf-8
 
 # 创建并初始化menu_list列表
-menu_list = []
-while True:
-    try:
-        food = input()
-        menu_list.append(food)
-    except:
-        break
-
+menu_list = ['meat', 'fish', 'chicken', 'carrot']
 # 请在此添加代码，对menu_list进行元组转换以及元组计算等操作，并打印输出元组及元组最大的元素
 ###### Begin ######
 menu = tuple(menu_list)
 print(menu)
-BIG = max (tuple(menu_list))
-print(BIG)
+if menu:
+    BIG = max(menu)
+    print(BIG)
 #######  End #######
 
 
