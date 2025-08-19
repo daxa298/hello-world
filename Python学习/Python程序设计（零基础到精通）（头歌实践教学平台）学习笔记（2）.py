@@ -70,3 +70,5 @@ if menu:
 # I/O 运行结果：（input输入为'meat', 'fish', 'chicken', 'carrot'）
 # ('meat', 'fish', 'chicken', 'carrot')
 # chicken
+
+
