@@ -12,3 +12,5 @@ class HelloManim(Scene):
 
         # 等待2秒
         self.wait(2)
+
+       
