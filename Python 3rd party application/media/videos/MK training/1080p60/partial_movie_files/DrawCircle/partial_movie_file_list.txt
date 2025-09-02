@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/codes/Python 3rd party application/media/videos/MK training/1080p60/partial_movie_files/DrawCircle/3977891868_2117890681_3172591498.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/MK training/1080p60/partial_movie_files/DrawCircle/2852726489_667144672_2156684628.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/MK training/1080p60/partial_movie_files/DrawCircle/2852726489_3531712457_1503646932.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/MK training/1080p60/partial_movie_files/DrawCircle/2852726489_667144672_415957484.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/MK training/1080p60/partial_movie_files/DrawCircle/2852726489_2564166383_2046837674.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/MK training/1080p60/partial_movie_files/DrawCircle/2852726489_667144672_2825982218.mp4'

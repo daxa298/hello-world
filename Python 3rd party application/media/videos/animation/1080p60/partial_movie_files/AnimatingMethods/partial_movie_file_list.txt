@@ -1,0 +1,10 @@
+# This file is used internally by FFMPEG.
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/3977891868_2318299070_2023860264.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_2363905802_2023860264.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_667144672_3200739121.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_2289561831_2375220172.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_667144672_3005100213.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_3857024656_1688392557.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_667144672_2505347604.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_742762509_3858844411.mp4'
+file 'file:D:/codes/Python 3rd party application/media/videos/animation/1080p60/partial_movie_files/AnimatingMethods/2852726489_667144672_673547451.mp4'
